@@ -190,6 +190,11 @@ class TaskListView extends Component {
     render() {
         return(
             <div>
+                <TextField
+                    disabled={true}
+                    value={'Sort: ' + this.props.sort_field + '; Direction: ' + this.props.sort_direction + "; Click on table's header and try sorting!"}
+                    style={{width: 845}}
+                />
                 {this.renderTable()}
             </div>
         )
